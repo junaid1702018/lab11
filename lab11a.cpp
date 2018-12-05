@@ -49,6 +49,17 @@ public:
 
 
 };
+class meters_yards : public convert_base {
+
+public:
+   meters_yards(double passed_value) : convert_base(passed_value) { }
+
+   void convert_it() {
+       converted_value = initial_value * 1.09361;
+       }
+
+
+};
 int main() {
 
 cout<<"kilos to miles class object"<<endl;
@@ -66,6 +77,14 @@ miles1.convert_it();
 cout << endl;
 cout << endl << "Distance in  miles is: " << miles1.get_initial();
 cout << endl << "Distance in kilometers is: " << miles1.get_converted();
+cout << endl;
+cout<<"meters to yards class object"<<endl;
+meters_yards meters1(75.0);
+meters1.convert_it();
+
+cout << endl;
+cout << endl << "Distance in meters is: " << meters1.get_initial();
+cout << endl << "Distance in yards1 is: " << meters1.get_converted();
 cout << endl;
 return 0;
 }
