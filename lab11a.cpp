@@ -72,9 +72,11 @@ public:
 
 };
 int main() {
-
+double k,m,me,y;
 cout<<"kilos to miles class object"<<endl;
-kilos_miles kilos1(100.0);
+cout<<"kilmeters=";
+cin>>k;
+kilos_miles kilos1(k);
 kilos1.convert_it();
 
 cout << endl;
@@ -84,7 +86,9 @@ cout << endl;
 cout << endl;
 cout << endl;
 cout<<"miles to kilos class object"<<endl;
-miles_kilos miles1(60.0);
+cout<<"miles=";
+cin>>m;
+miles_kilos miles1(m);
 miles1.convert_it();
 cout << endl;
 cout << endl << "Distance in  miles is: " << miles1.get_initial();
@@ -93,7 +97,9 @@ cout << endl;
 cout << endl;
 cout << endl;
 cout<<"meters to yards class object"<<endl;
-meters_yards meters1(75.0);
+cout<<"meters=";
+cin>>me;
+meters_yards meters1(me);
 meters1.convert_it();
 
 cout << endl;
@@ -104,7 +110,9 @@ cout << endl;
 cout << endl;
 cout << endl;
 cout<<"yards to meters class object"<<endl;
-yards_meters yards1(35.0);
+cout<<"yards=";
+cin>>y;
+yards_meters yards1(y);
 yards1.convert_it();
 
 cout << endl;
